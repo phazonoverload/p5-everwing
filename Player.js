@@ -31,8 +31,8 @@ function Player() {
   }
 
   this.removeOffscreenShots = function() {
-    for(var i = 0; i < this.shots.length; i++) {
-      // REMOVE
+    if(this.shots.length > 0 && this.shots[0].y < 0) {
+      this.shots.shift();
     }
   }
 
@@ -58,6 +58,7 @@ function Player() {
     this.createShots();
     this.updateShots();
     this.drawShots();
+    this.removeOffscreenShots();
     this.show();
   }
 }

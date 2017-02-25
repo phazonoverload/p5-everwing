@@ -25,6 +25,4 @@ function draw() {
     coins[i].draw();
   }
 
-  console.log(coins.length);
-
 }

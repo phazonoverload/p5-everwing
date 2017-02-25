@@ -27,18 +27,14 @@ function Game() {
   }
 
   this.destroyEnemies = function() {
-   for(var i = 0; i < enemies.length; i++) {
-    if(enemies[0][0].y > height) {
-      enemies.shift();
-    }
+   if(enemies.length > 0 && enemies[0][0].y > height) {
+    enemies.shift();
    }
   }
 
   this.destroyCoins = function() {
-   for(var i = 0; i < coins.length; i++) {
-    if(coins[0].y > height) {
-      coins.shift();
-    }
+   if(coins.length > 0 && coins[0].y > height) {
+    coins.shift();
    }
   }
 
