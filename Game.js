@@ -34,13 +34,18 @@ function Game() {
    }
   }
 
-  this.enemyManagement = function() {
-    this.createEnemies();
-    this.destroyEnemies();
+  this.destroyCoins = function() {
+   for(var i = 0; i < enemies.length; i++) {
+    if(enemies[0][0].y > height) {
+      enemies.shift();
+    }
+   }
   }
 
   this.draw = function() {
     this.increaseScore();
     this.showScore();
+    this.createEnemies();
+    this.destroyEnemies();
   }
 }

@@ -25,6 +25,6 @@ function draw() {
 
   player.draw();
 
-  game.enemyManagement();
+  console.log(coins.length);
 
 }

@@ -12,16 +12,14 @@ function Player() {
   }
 
   this.hitEdge = function() {
-    // TODO - use constrain
-    this.x < this.size ? this.x = this.size : "";
-    this.x > width - this.size ? this.x = width - this.size : "";
+    this.x = constrain(this.x, 0, width - this.size);
   }
 
   this.createShots = function() {
     if(frameCount % 10 == 0) {
       this.shots.push({
-        x: this.x,
-        y: this.y - this.size / 2
+        x: (this.x + this.size / 2) - 5,
+        y: this.y
       });
     }
   }
