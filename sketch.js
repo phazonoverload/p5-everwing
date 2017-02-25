@@ -19,11 +19,11 @@ function draw() {
     }
   }
 
+  player.draw();
+
   for(var i = 0; i < coins.length; i++) {
     coins[i].draw();
   }
-
-  player.draw();
 
   console.log(coins.length);
 

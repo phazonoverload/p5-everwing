@@ -35,9 +35,9 @@ function Game() {
   }
 
   this.destroyCoins = function() {
-   for(var i = 0; i < enemies.length; i++) {
-    if(enemies[0][0].y > height) {
-      enemies.shift();
+   for(var i = 0; i < coins.length; i++) {
+    if(coins[0].y > height) {
+      coins.shift();
     }
    }
   }
@@ -47,5 +47,6 @@ function Game() {
     this.showScore();
     this.createEnemies();
     this.destroyEnemies();
+    this.destroyCoins();
   }
 }
