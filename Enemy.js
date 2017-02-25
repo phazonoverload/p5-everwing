@@ -1,6 +1,6 @@
 function Enemy(i) {
   this.size = 50;
-  this.x = 37.5 + (width / 7) + (width / 7) * i;
+  this.x = 12.5 + (width / 7) + (width / 7) * i;
   this.y = -this.size;
   this.color = 255;
   this.alive = true;

@@ -1,7 +1,7 @@
 function Player() {
-  this.x = width / 2;
-  this.y = height - 50;
   this.size = 50;
+  this.x = (width / 2) - 25;
+  this.y = height - (this.size * 2);
   this.shots = [];
 
   this.move = function() {
