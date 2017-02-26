@@ -17,32 +17,8 @@ function Game() {
     pop();
   }
 
-  this.createEnemies = function() {
-    if(frameCount % 75 == 0) {
-      enemies.push([]);
-      for(var i = 0; i < 5; i++) {
-        enemies[enemies.length-1].push(new Enemy(i));
-      }
-    }
-  }
-
-  this.destroyEnemies = function() {
-   if(enemies.length > 0 && enemies[0][0].y > height) {
-    enemies.shift();
-   }
-  }
-
-  this.destroyCoins = function() {
-   if(coins.length > 0 && coins[0].y > height) {
-    coins.shift();
-   }
-  }
-
   this.draw = function() {
     this.increaseScore();
     this.showScore();
-    this.createEnemies();
-    this.destroyEnemies();
-    this.destroyCoins();
   }
 }

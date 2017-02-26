@@ -25,4 +25,6 @@ function draw() {
     coins[i].draw();
   }
 
+  entityManagement();
+
 }

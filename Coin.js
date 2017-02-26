@@ -1,7 +1,7 @@
 function Coin(_x, _y) {
   this.x = _x + 25 - 10; // 25 is half enemy size, 10 is half coin size
   this.y = _y;
-  this.acc = 0.1;
+  this.acc = 0.2;
   this.vel = 0;
 
   this.move = function() {
