@@ -1,5 +1,5 @@
 function createShots() {
-  if (frameCount % 10 == 0) {
+  if(frameCount % 10 == 0) {
     player.shots.push({
       x: (player.x + player.size / 2) - 5,
       y: player.y
@@ -8,19 +8,19 @@ function createShots() {
 }
 
 function updateShots() {
-  for (var i = 0; i < player.shots.length; i++) {
+  for(var i = 0; i < player.shots.length; i++) {
     player.shots[i].y -= game.speed * 3;
   }
 }
 
 function removeOffscreenShots() {
-  if (player.shots.length > 0 && player.shots[0].y < 0) {
+  if(player.shots.length > 0 && player.shots[0].y < 0) {
     player.shots.shift();
   }
 }
 
 function drawShots() {
-  for (var i = 0; i < player.shots.length; i++) {
+  for(var i = 0; i < player.shots.length; i++) {
     push();
     fill("#FE017E");
     rect(player.shots[i].x, player.shots[i].y, 10, 10);
@@ -29,22 +29,22 @@ function drawShots() {
 }
 
 function createEnemies() {
-  if (frameCount % 75 == 0) {
+  if(frameCount % 75 == 0) {
     enemies.push([]);
-    for (var i = 0; i < 5; i++) {
-      enemies[enemies.length - 1].push(new Enemy(i));
+    for(var i = 0; i < 5; i++) {
+      enemies[enemies.length - 1].push(new Enemy(frameCount, i));
     }
   }
 }
 
 function removeOffscreenEnemies() {
-  if (enemies.length > 0 && enemies[0][0].y > height) {
+  if(enemies.length > 0 && enemies[0][0].y > height) {
     enemies.shift();
   }
 }
 
 function removeOffscreenCoins() {
-  if (coins.length > 0 && coins[0].y > height) {
+  if(coins.length > 0 && coins[0].y > height) {
     coins.shift();
   }
 }

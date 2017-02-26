@@ -9,6 +9,9 @@ function Player() {
       keyCode == LEFT_ARROW ? this.x -= 10 : "";
       keyCode == RIGHT_ARROW ? this.x += 10 : "";
     }
+    if(mouseIsPressed) {
+      this.x = mouseX;
+    }
   }
 
   this.hitEdge = function() {

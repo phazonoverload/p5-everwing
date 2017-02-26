@@ -1,6 +1,7 @@
-function Enemy(i) {
+function Enemy(_frame, _i) {
+  this.batch = _frame;
   this.size = 50;
-  this.x = 12.5 + (width / 7) + (width / 7) * i;
+  this.x = 12.5 + (width / 7) + (width / 7) * _i;
   this.y = -this.size;
   this.color = 255;
   this.alive = true;
