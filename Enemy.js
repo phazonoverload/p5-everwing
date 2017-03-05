@@ -12,20 +12,19 @@ function Enemy(_frame, _i) {
 
   this.hit = function() {
     for(var i = 0; i < player.shots.length; i++) {
-      // NOT SOLID DETECTION
-      if(player.shots[i].x > this.x && 
-        player.shots[i].x < this.x + this.size && 
-        player.shots[i].y > this.y &&
-        player.shots[i].y < this.y + this.size &&
-        this.alive) {
-        this.kill();
+      if(player.shots[i].x > this.x && player.shots[i].x < this.x + this.size) {
+        if(player.shots[i].y > this.y && player.shots[i].y < this.y + this.size) {
+          if(this.alive) {
+            this.kill();
+          }
+        }
       }
     }
   }
 
   this.kill = function() {
     this.alive = false;
-    this.color = 50;
+    this.color = 0;
     game.kills++;
     game.score += 50;
     this.spawnCoin();
