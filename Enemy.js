@@ -10,13 +10,23 @@ function Enemy(_frame, _i) {
     this.y += game.speed;
   }
 
-  this.hit = function() {
-    for(var i = 0; i < player.shots.length; i++) {
-      if(player.shots[i].x > this.x && player.shots[i].x < this.x + this.size) {
-        if(player.shots[i].y > this.y && player.shots[i].y < this.y + this.size) {
+  this.hitByShot = function() {
+    for(var i = 0; i < shots.length; i++) {
+      if(shots[i].x > this.x - shots[i].size && shots[i].x < this.x + this.size) {
+        if(shots[i].y > this.y && shots[i].y < this.y + this.size) {
           if(this.alive) {
             this.kill();
           }
+        }
+      }
+    }
+  }
+
+  this.hitByPlayer = function() {
+    if(player.y > this.y && player.y < this.y + this.size) {
+      if(player.xSmoothed > this.x && player.xSmoothed < this.x + this.size) {
+        if(this.alive) {
+          player.color = "red";
         }
       }
     }
@@ -44,6 +54,7 @@ function Enemy(_frame, _i) {
   this.draw = function() {
     this.move();
     this.show();
-    this.hit();
+    this.hitByShot();
+    this.hitByPlayer();
   }
 }

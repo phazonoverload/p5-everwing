@@ -16,7 +16,7 @@
 
 - [x] Nested if statements
 - [ ] Boolean variables
-- [ ] Complex boolean conditions
+- [x] Complex boolean conditions
 
 ## Loops
 
@@ -88,7 +88,7 @@
 
 - [ ] All of the functionality relating to your objects is functions attatched to the object 
 - [x] Almost all of the functionality of the program is in objects 
-- [ ] A design involving many objects that interact with eachother
+- [ ] A design involving many objects that interact with each other
 
 # Bonus
 

@@ -1,7 +1,8 @@
 var game,
     player,
     enemies = [],
-    coins = [];
+    coins = [],
+    shots = [];
 
 function setup() {
   createCanvas(windowHeight / 1.6, windowHeight);
@@ -25,6 +26,8 @@ function draw() {
     coins[i].draw();
   }
 
-  entityManagement();
+  for(var i = 0; i < shots.length; i++) {
+    shots[i].draw();
+  }
 
 }
