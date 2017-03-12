@@ -9,15 +9,11 @@ function Player() {
   this.move = function() {
     this.onepole.setTime(0.25, 60);
     this.onepole.process(this.x);
-
     if(keyIsPressed) {
       keyCode == LEFT_ARROW ? this.x -= 10 : "";
       keyCode == RIGHT_ARROW ? this.x += 10 : "";
     }
-    if(mouseIsPressed) {
-      this.x = mouseX;
-    }
-
+    if(mouseIsPressed) this.x = mouseX;
     this.xSmoothed = this.onepole.process(this.x);
   }
 
@@ -25,8 +21,14 @@ function Player() {
     this.xSmoothed = constrain(this.xSmoothed, 0, width - this.size);
   }
 
-  this.hitEnemy = function() {
-
+  this.grabCoin = function() {
+    for(var i = 0; i < coins.length; i++) {
+      if(coins[i].x > this.x - coins[i].size && coins[i].x < this.x + this.size) {
+        if(coins[i].y > this.y - coins[i].size && coins[i].y < this.y) {
+          coins[i].remove();
+        }
+      }
+    }
   }
 
   this.show = function() {
@@ -39,7 +41,7 @@ function Player() {
   this.draw = function() {
     this.move();
     this.hitEdge();
-    this.hitEnemy();
+    this.grabCoin();
     this.show();
   }
 }

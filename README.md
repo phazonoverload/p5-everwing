@@ -1,5 +1,15 @@
 # Everwing - Term 2 Intro to Programming Project
 
+- [ ] Game over state
+- [ ] Make coins fall at random angle
+- [ ] Meteors
+- [ ] Hit points for enemies
+- [ ] Designed entities
+
+---
+
+# Mark scheme
+
 ## Variables & if statements
 
 ### Baseline (4 marks)
@@ -12,7 +22,7 @@
 - [x] At least 1 if statement
 - [x] Several variables
 
-### Advanced (max 2 marks)
+### Advanced (2 marks for min 2 items)
 
 - [x] Nested if statements
 - [ ] Boolean variables
@@ -30,7 +40,7 @@
 - [x] Nested loop
 - [ ] Using the loop variable
 
-### Advanced (max 2 marks)
+### Advanced (2 marks for min 2 items)
 
 - [ ] Non-standard loop (e.g. backwards) 
 - [ ] Searching or otherwise breaking out of loops with break or return
@@ -48,7 +58,7 @@
 - [ ] Functional programming (map, filter, reduce, etc)
 - [x] Arrays of objects
 
-### Advanced (max 2 marks)
+### Advanced (2 marks for min 2 items)
 
 - [x] 2D arrays
 - [ ] Random access of arrays
@@ -66,7 +76,7 @@
 - [x] Parameterised functions  
 - [ ] Return values
 
-### Advanced (max 2 marks)
+### Advanced (2 marks for min 2 items)
 
 - [x] Anonymous functions
 - [ ] Functions that return different things depending on conditions or use conditions to return at different points in the function 
@@ -84,7 +94,7 @@
 - [x] Use of classes or constructors
 - [ ] Parameterised functions
 
-### Advanced (max 2 marks)
+### Advanced (2 marks for min 2 items)
 
 - [ ] All of the functionality relating to your objects is functions attatched to the object 
 - [x] Almost all of the functionality of the program is in objects 

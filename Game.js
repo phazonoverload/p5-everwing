@@ -3,10 +3,8 @@ function Game() {
   this.speed = 2;
   this.kills = 0;
 
-  this.increaseScore = function() {
-    if(frameCount % 10 == 0) {
-      this.score++;
-    }
+  this.increaseScore = function(value) {
+    this.score += value;
   }
 
   this.showScore = function() {
@@ -15,10 +13,6 @@ function Game() {
     text("Score " + this.score, 20, 20);
     text("Kills " + this.kills, 20, 50);
     pop();
-  }
-
-  this.end = function() {
-    background("red");
   }
 
   this.createShots = function() {
@@ -37,13 +31,12 @@ function Game() {
   }
 
   this.removeOffscreenEntities = function() {
-      if(shots.length > 0 && shots[0].y < 0) shots.shift();
-      if(enemies.length > 0 && enemies[0][0].y > height) enemies.shift();
-      if(coins.length > 0 && coins[0].y > height) coins.shift();
+    if(shots.length > 0 && shots[0].y < 0) shots.shift();
+    if(enemies.length > 0 && enemies[0][0].y > height) enemies.shift();
+    if(coins.length > 0 && coins[0].y > height) coins.shift();
   }
 
   this.draw = function() {
-    this.increaseScore();
     this.showScore();
     this.createShots();
     this.createEnemies();

@@ -16,6 +16,7 @@ function Enemy(_frame, _i) {
         if(shots[i].y > this.y && shots[i].y < this.y + this.size) {
           if(this.alive) {
             this.kill();
+            shots.splice(i, 1);
           }
         }
       }
@@ -36,7 +37,6 @@ function Enemy(_frame, _i) {
     this.alive = false;
     this.color = 0;
     game.kills++;
-    game.score += 50;
     this.spawnCoin();
   }
 

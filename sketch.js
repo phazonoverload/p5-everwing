@@ -20,11 +20,11 @@ function draw() {
     }
   }
 
-  player.draw();
-
   for(var i = 0; i < coins.length; i++) {
     coins[i].draw();
   }
+
+  player.draw();
 
   for(var i = 0; i < shots.length; i++) {
     shots[i].draw();
