@@ -11,7 +11,7 @@ function Enemy(_frame, _i) {
   }
 
   this.hitByShot = function() {
-    for(var i = 0; i < shots.length; i++) {
+    for(var i = shots.length-1; i > 0; i--) {
       if(shots[i].x > this.x - shots[i].size && shots[i].x < this.x + this.size) {
         if(shots[i].y > this.y && shots[i].y < this.y + this.size) {
           if(this.alive) {

@@ -1,10 +1,14 @@
 # Everwing - Term 2 Intro to Programming Project
 
 - [ ] Game over state
-- [ ] Make coins fall at random angle
+- [x] Make coins fall at random angle
 - [ ] Meteors
 - [ ] Hit points for enemies
 - [ ] Designed entities
+- [ ] Use vectors for x and y positions
+- [ ] Sounds
+- [ ] Make hit detection work
+- [ ] Fix initial onePole offset
 
 ---
 
@@ -42,9 +46,9 @@
 
 ### Advanced (2 marks for min 2 items)
 
-- [ ] Non-standard loop (e.g. backwards) 
+- [x] Non-standard loop (e.g. backwards) (in Enemy.js)
 - [ ] Searching or otherwise breaking out of loops with break or return
-- [ ] While loop
+- [x] While loop (in Player.js)
 
 ## Arrays
 

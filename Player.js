@@ -22,12 +22,14 @@ function Player() {
   }
 
   this.grabCoin = function() {
-    for(var i = 0; i < coins.length; i++) {
-      if(coins[i].x > this.x - coins[i].size && coins[i].x < this.x + this.size) {
-        if(coins[i].y > this.y - coins[i].size && coins[i].y < this.y) {
+    var i = 0;
+    while(i < coins.length) {
+      if(coins[i].pos.x > this.x - coins[i].size && coins[i].pos.x < this.x + this.size) {
+        if(coins[i].pos.y > this.y - coins[i].size && coins[i].pos.y < this.y) {
           coins[i].remove();
         }
       }
+      i++;
     }
   }
 
