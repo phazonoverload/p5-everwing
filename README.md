@@ -36,7 +36,7 @@
 
 ### Baseline (4 marks)
 
-- [x] Your program uses ar lease one basic loop
+- [x] Your program uses at lease one basic loop
 
 ### Basic (max 2 marks)
 
@@ -66,13 +66,13 @@
 
 - [x] 2D arrays
 - [ ] Random access of arrays
-- [ ] Random insertion/splicing arrays
+- [x] Random insertion/splicing arrays
 
 ## Functions
 
 ### Baseline (4 marks)
 
-- [x] Your program uses ar least one function defined by you
+- [x] Your program uses at least one function defined by you
 
 ### Basic (max 2 marks)
 
@@ -82,7 +82,7 @@
 
 ### Advanced (2 marks for min 2 items)
 
-- [x] Anonymous functions
+- [ ] Anonymous functions
 - [ ] Functions that return different things depending on conditions or use conditions to return at different points in the function 
 - [ ] Passing functions as arguments
 
@@ -96,11 +96,11 @@
 
 - [x] Your objects have functions attached
 - [x] Use of classes or constructors
-- [ ] Parameterised functions
+- [x] Parameterised functions
 
 ### Advanced (2 marks for min 2 items)
 
-- [ ] All of the functionality relating to your objects is functions attatched to the object 
+- [x] All of the functionality relating to your objects are functions attatched to the object 
 - [x] Almost all of the functionality of the program is in objects 
 - [ ] A design involving many objects that interact with each other
 
