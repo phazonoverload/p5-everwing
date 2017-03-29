@@ -60,6 +60,12 @@
 - [x] Most of your code is in your own functions not draw, setup etc (throughout)
 - [x] Parameterised functions (Enemy.js)
 
+### Advanced
+
+- [x] Anonymous functions (Game.js)
+- [x] Passing functions as arguments (Game.js)
+
+
 ## Objects: 8/8
 
 ### Baseline
@@ -73,7 +79,7 @@
 - [x] Parameterised functions (Enemy.js)
 
 ### Advanced
-
+ 
 - [x] All of the functionality relating to your objects are functions attatched to the object (Player.js, Enemy.js, Coin.js, Shots.js)
 - [x] Almost all of the functionality of the program is in objects (Player.js, Enemy.js, Coin.js, Shots.js)
 
@@ -81,6 +87,6 @@
 
 # Targets
 
-1. Pass functions as arguments to handle collision detection
+1. Pass functions as arguments to handle collision detection (Player.js this.die())
 2. Anonymous function to update score
 3. Return values to update score

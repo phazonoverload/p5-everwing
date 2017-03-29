@@ -1,3 +1,6 @@
+// The shot constructor function is very simple. 
+// The starting this.x value is where the player currently is
+// Every frame it moves up relative to the game.speed
 function Shot(_id) {
   this.id = _id;
   this.x = (player.xSmoothed + player.size / 2) - 5;
