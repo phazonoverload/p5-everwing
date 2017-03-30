@@ -6,7 +6,6 @@ function Game() {
 
   // This function is only run when player.grabCoin() triggers it 
   this.increaseScore = function(value) {
-    // Expressed but not defined, making it an anonymous function
     var newScore = function() {
       return game.score + value;
     }
@@ -29,16 +28,6 @@ function Game() {
     }
   }
 
-  // Create a new set of 5 enemeies every 75 frames
-  this.createEnemies = function() {
-    if(frameCount % 75 == 0) {
-      enemies.push([]);
-      for(var i = 0; i < 5; i++) {
-        enemies[enemies.length - 1].push(new Enemy(frameCount, i));
-      }
-    }
-  }
-
   // Remove all shots, enemies and coins which have fallen off the screen
   this.removeOffscreenEntities = function() {
     if(shots.length > 0 && shots[0].y < 0) shots.shift();
@@ -50,7 +39,6 @@ function Game() {
   this.draw = function() {
     this.showScore();
     this.createShots();
-    this.createEnemies();
     this.removeOffscreenEntities();
   }
 }

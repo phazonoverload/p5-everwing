@@ -62,7 +62,7 @@
 
 ### Advanced
 
-- [x] Anonymous functions (Game.js)
+- [x] Anonymous functions (sketch.js)
 - [x] Passing functions as arguments (Game.js)
 
 
