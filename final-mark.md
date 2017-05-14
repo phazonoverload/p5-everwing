@@ -62,7 +62,6 @@
 
 ### Advanced
 
-- [x] Anonymous functions (sketch.js)
 - [x] Passing functions as arguments (Game.js)
 
 
@@ -87,6 +86,6 @@
 
 # Targets
 
-1. Pass functions as arguments to handle collision detection (Player.js this.die())
-2. Anonymous function to update score
-3. Return values to update score
+1. Pass functions as arguments to handle collision detection (Player.js this.die()) // Complete
+2. Anonymous function to update score // Incomplete
+3. Return values to update score // Complete
