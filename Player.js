@@ -53,7 +53,8 @@ function Player() {
   this.show = function() {
     push();
     fill(this.color);
-    rect(this.xSmoothed, this.y, this.size, this.size);
+    rect(this.xSmoothed, this.y, this.size/2, this.size/2);
+    image(ship, this.xSmoothed, this.y, this.size/2, this.size/2);
     pop();
   }
 

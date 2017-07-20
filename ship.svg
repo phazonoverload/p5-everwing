@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="24px" viewBox="0 0 27 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M26.7554,11.87031 C26.7554,17.03497 23.8258,21.51269 19.5391,23.74105 L19.5391,14.81346 L7.2158,14.81346 L7.2158,23.74148 C2.9296,21.51269 0,17.0354 0,11.87031 C0,6.70608 2.9296,2.22965 7.2158,0 L7.2158,8.92845 L19.5396,8.92845 L19.5396,0 C23.8258,2.22965 26.7554,6.70651 26.7554,11.87031 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WiW-Homepage-1" transform="translate(-475.000000, -2519.000000)">
+            <g id="Group-3" transform="translate(0.000000, 731.000000)" fill="#FFFFFF">
+                <polygon id="Fill-1" points="0 1862 1103 1862 1103 0 0 0"></polygon>
+                <polygon id="Fill-2" points="0 1862 1103 1862 1103 0 0 0"></polygon>
+            </g>
+            <rect id="Rectangle" fill="#000000" x="475" y="2519" width="27" height="24"></rect>
+            <g id="Group-7" transform="translate(475.000000, 2519.000000)">
+                <g id="Group">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-6"></g>
+                    <polygon id="Fill-5" fill="#FFFFFF" mask="url(#mask-2)" points="-5 28.74148 31.75542 28.74148 31.75542 -5 -5 -5"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

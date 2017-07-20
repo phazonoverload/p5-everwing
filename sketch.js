@@ -3,7 +3,8 @@ var game,
     player,
     enemies = [],
     coins = [],
-    shots = [];
+    shots = [],
+    ship;
 
 // Set up the canvas, create a new game and player object and store them globally
 function setup() {
@@ -11,6 +12,7 @@ function setup() {
   noStroke();
   game = new Game();
   player = new Player();
+  ship = loadImage("ship.svg"); 
 }
 
 function draw() {

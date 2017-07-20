@@ -3,7 +3,7 @@
 // Every frame it moves up relative to the game.speed
 function Shot(_id) {
   this.id = _id;
-  this.x = (player.xSmoothed + player.size / 2) - 5;
+  this.x = (player.xSmoothed + player.size / 4) - 5;
   this.y = player.y;
   this.size = 10;
 
